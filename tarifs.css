@@ -1,0 +1,85 @@
+.jumbotron 
+{
+  /* Choisis la hauteur ici */
+ max-width: 100%;
+ height: auto;
+  /* Tu lui donnes une image de background */
+  background-image: url("legumes.jpg");
+  /* Centre l'image et la met bien sur tous les écrans */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items : center;
+  text-align: center; 
+}
+
+
+.btn-outline-light
+{
+  background-color:#FF9100;
+  border-radius: 10px;
+  padding: 10px;
+  border: 1px #F2F2F2 solid;
+}
+
+#all 
+{ display: flex;
+  flex-wrap: wrap;
+  flex-direction: row; 
+  justify-content: center;
+}
+
+.infobulle 
+{
+  position: relative;
+  cursor: help;
+}
+
+.infobulle:hover::after,
+.infobulle:focus::after 
+{
+  content: attr(aria-label);
+  position: absolute;
+  top: -1.8em;
+  left: 50%;
+  transform: translateX(-50%); /* on centre horizontalement  */
+  z-index: 1; /* pour s'afficher au dessus des éléments en position relative */
+  white-space: nowrap;  /* on interdit le retour à la ligne */
+  color: #008000;
+}
+
+#search
+  {
+  display: flex;
+  }
+#search
+input 
+  { font-size: 9px;
+  border-radius: 10px;
+  padding: 5px;
+  border: 1px #F2F2F2 solid;
+}
+
+.col-5
+{
+  background-color: #FF9100;
+ 
+}
+
+.col-4
+{
+  background-color:#DBDBDB;
+ 
+}
+
+.col-3
+{
+  background-color:#DBDBDB;
+}
+
+input:focus 
+  {
+  box-shadow: 1px 1px 1px grey;
+  color : #FF9100;
+  border: 1px #FF9100 solid;
+  }
